@@ -11,14 +11,10 @@ class Employee:
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
     
-    def apply_raise(self):
-        self.pay = int(self.pay * self.raise_amount)
-        print(emp_2.pay)
+def apply_raise(self):
+    self.pay = int(self.pay * self.raise_amount)
 
 emp_1 = Employee('Mahmudur', 'rahman' , 60000)
-emp_2 = Employee('Harvy','the destroyer', 75000)
+emp_2 = Employee('Harvy','the destroyer', 75000) 
 
-#print(emp_1.email) 
-#print('{} {}'.format(emp_2.first, emp_2.last))
-#print('{} {}'.format(emp_1.first, emp_1.last))
-#print(emp_2.pay)
+print(Employee.apply_raise(emp_2))
